@@ -2,9 +2,11 @@ from telethon.sync import TelegramClient
 from telethon.tl.types import PeerChannel
 import csv
 
+######## ENTER PHONE NUMBER TO SIGN IN AS THIS +15148034148
+
 # Your Telegram API credentials
-api_id = ''
-api_hash = ''
+api_id = '27277499'
+api_hash = 'c87b9159de4d68651819afe97b289277'
 # Initialize the Telegram client
 client = TelegramClient('session_name', api_id, api_hash)
 
@@ -37,7 +39,7 @@ async def save_to_csv(messages, filename):
 
 async def main():
     # Channel username (without '@')
-    channel_username = ''
+    channel_username = 'jbean2021'
     
     # Get all messages from the channel
     all_messages = await get_all_messages(channel_username)
